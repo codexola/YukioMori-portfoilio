@@ -1,0 +1,35 @@
+# dependencies
+node_modules/
+
+# next.js
+.next/
+out/
+build/
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+
+# env
+.env*.local
+.env
+
+# vercel
+.vercel
+
+# local tooling config (machine/user-specific, not part of the project)
+.claude/settings.local.json
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# personal source documents (contain home address, phone number, birthdate —
+# not for public repo; the site only surfaces what's meant to be public)
+*(履歴書)*.pdf
+*(職務経歴書)*.pdf
+*スキルシート*.xlsx
+Ryuko3.png
