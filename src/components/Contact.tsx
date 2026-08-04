@@ -6,7 +6,7 @@ import { profile } from "@/lib/data";
 
 export default function Contact() {
   return (
-    <section id="contact" className="relative py-28 px-6">
+    <section id="contact" className="relative py-24 md:py-32 px-6">
       <div className="max-w-3xl mx-auto text-center">
         <SectionHeading index="陸 / SIX" kanji="連絡先" en="Contact" />
 

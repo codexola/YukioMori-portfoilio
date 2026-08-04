@@ -34,7 +34,7 @@ function SkillsOrbitFallback() {
 
 export default function Skills() {
   return (
-    <section id="skills" className="relative py-28 px-6">
+    <section id="skills" className="relative py-24 md:py-32 px-6">
       <div className="max-w-6xl mx-auto">
         <SectionHeading index="弐 / TWO" kanji="専門技術" en="Core Expertise" />
 

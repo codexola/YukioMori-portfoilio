@@ -14,6 +14,8 @@
   --color-gold: #b8963f;
   --color-gold-soft: #d8bd7a;
   --color-vermillion: #a13d2f;
+  --color-sakura: #e78fae;
+  --color-sakura-soft: #f6cede;
 }
 
 :root {
@@ -28,6 +30,7 @@ body {
   background-color: var(--color-indigo-deep);
   color: var(--color-washi);
   font-family: var(--font-sans-jp);
+  line-height: 1.75;
   overflow-x: hidden;
 }
 
@@ -63,12 +66,19 @@ body {
   color: transparent;
 }
 
+.sakura-text {
+  background: linear-gradient(120deg, var(--color-sakura-soft), var(--color-sakura) 45%, var(--color-sakura-soft));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 .section-label {
   letter-spacing: 0.35em;
 }
 
 ::selection {
-  background: var(--color-gold);
+  background: var(--color-sakura);
   color: var(--color-indigo-deep);
 }
 

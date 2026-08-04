@@ -88,7 +88,7 @@ function CaseCard({ cs, index }: { cs: (typeof caseStudies)[number]; index: numb
 
 export default function CaseStudies() {
   return (
-    <section id="works" className="relative py-28 px-6">
+    <section id="works" className="relative py-24 md:py-32 px-6">
       <div className="max-w-6xl mx-auto">
         <SectionHeading index="四 / FOUR" kanji="主な実績" en="Selected Case Studies" />
         <p className="text-center text-xs text-[var(--color-washi-dark)]/50 -mt-8 mb-14 tracking-wide">

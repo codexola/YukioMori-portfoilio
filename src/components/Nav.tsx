@@ -34,8 +34,12 @@ export default function Nav() {
         <ul className="hidden md:flex items-center gap-8 text-xs tracking-[0.25em] text-[var(--color-washi)]/80">
           {links.map((l) => (
             <li key={l.href}>
-              <a href={l.href} className="hover:text-[var(--color-gold-soft)] transition-colors">
+              <a
+                href={l.href}
+                className="relative group hover:text-[var(--color-sakura-soft)] transition-colors"
+              >
                 {l.label}
+                <span className="absolute left-0 -bottom-1 h-px w-0 bg-[var(--color-sakura)] transition-all duration-300 group-hover:w-full" />
               </a>
             </li>
           ))}

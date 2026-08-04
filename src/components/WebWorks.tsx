@@ -7,7 +7,7 @@ import { webWorks } from "@/lib/data";
 
 export default function WebWorks() {
   return (
-    <section className="relative py-28 px-6">
+    <section className="relative py-24 md:py-32 px-6">
       <div className="max-w-5xl mx-auto">
         <SectionHeading index="伍 / FIVE" kanji="Web開発 実績" en="Selected Web Projects" />
         <p className="text-center text-xs text-[var(--color-washi-dark)]/50 -mt-8 mb-14 tracking-wide max-w-2xl mx-auto leading-relaxed">

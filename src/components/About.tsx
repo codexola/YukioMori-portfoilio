@@ -6,7 +6,7 @@ import { profile, selfPR } from "@/lib/data";
 
 export default function About() {
   return (
-    <section id="about" className="relative py-28 px-6">
+    <section id="about" className="relative py-24 md:py-32 px-6">
       <div className="max-w-5xl mx-auto">
         <SectionHeading index="壱 / ONE" kanji="経歴概要" en="Profile" />
 

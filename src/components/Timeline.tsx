@@ -7,7 +7,7 @@ import { career, institutions } from "@/lib/data";
 
 export default function Timeline() {
   return (
-    <section id="career" className="relative py-28 px-6">
+    <section id="career" className="relative py-24 md:py-32 px-6">
       <div className="max-w-4xl mx-auto">
         <SectionHeading index="参 / THREE" kanji="沿革" en="Education & Career" />
 

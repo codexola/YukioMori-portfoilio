@@ -308,9 +308,10 @@ export default function SakuraField() {
         budsRef.current.setMatrixAt(i, dummy.matrix);
       }
       if (flowersRef.current) {
+        const breathe = 1 + Math.sin(b.phase * 2.2 + i) * 0.05 * b.openness;
         dummy.position.set(b.x, b.y, b.z);
         dummy.rotation.set(rot * 0.25, rot * 0.6, rot * 0.15);
-        dummy.scale.setScalar(b.scale * b.openness);
+        dummy.scale.setScalar(b.scale * b.openness * breathe);
         dummy.updateMatrix();
         flowersRef.current.setMatrixAt(i, dummy.matrix);
       }

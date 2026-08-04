@@ -8,9 +8,10 @@ export default function InkDivider({ className = "" }: { className?: string }) {
     >
       <defs>
         <linearGradient id="inkGrad" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0%" stopColor="var(--color-gold-soft)" stopOpacity="0" />
-          <stop offset="50%" stopColor="var(--color-gold)" stopOpacity="0.9" />
-          <stop offset="100%" stopColor="var(--color-gold-soft)" stopOpacity="0" />
+          <stop offset="0%" stopColor="var(--color-sakura)" stopOpacity="0" />
+          <stop offset="35%" stopColor="var(--color-gold)" stopOpacity="0.9" />
+          <stop offset="65%" stopColor="var(--color-gold)" stopOpacity="0.9" />
+          <stop offset="100%" stopColor="var(--color-sakura)" stopOpacity="0" />
         </linearGradient>
       </defs>
       <path
@@ -20,7 +21,7 @@ export default function InkDivider({ className = "" }: { className?: string }) {
         strokeWidth="2"
         strokeLinecap="round"
       />
-      <circle cx="400" cy="20" r="3" fill="var(--color-gold)" />
+      <circle cx="400" cy="20" r="3.5" fill="var(--color-sakura)" />
     </svg>
   );
 }

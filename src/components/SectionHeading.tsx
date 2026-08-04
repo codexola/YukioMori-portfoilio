@@ -20,18 +20,19 @@ export default function SectionHeading({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-      className={`mb-14 ${align === "center" ? "text-center items-center" : "text-left items-start"} flex flex-col`}
+      className={`mb-16 ${align === "center" ? "text-center items-center" : "text-left items-start"} flex flex-col`}
     >
-      <span className="text-xs tracking-[0.5em] text-[var(--color-gold-soft)] section-label mb-3">
+      <span className="flex items-center gap-2 text-xs tracking-[0.5em] text-[var(--color-gold-soft)] section-label mb-3">
+        <span className="w-1 h-1 rounded-full bg-[var(--color-sakura)]" aria-hidden="true" />
         {index}
       </span>
-      <h2 className="font-serif-jp text-3xl md:text-5xl font-medium gold-text tracking-wide">
+      <h2 className="font-serif-jp text-4xl md:text-6xl font-medium gold-text tracking-wide">
         {kanji}
       </h2>
-      <p className="mt-2 text-xs md:text-sm uppercase tracking-[0.3em] text-[var(--color-washi-dark)]/70">
+      <p className="mt-3 text-xs md:text-sm uppercase tracking-[0.3em] text-[var(--color-washi-dark)]/70">
         {en}
       </p>
-      <div className="w-40 mt-5">
+      <div className="w-40 mt-6">
         <InkDivider />
       </div>
     </motion.div>
